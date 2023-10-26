@@ -1,13 +1,13 @@
 <?php
-if(!isset($_COOKIE['odw'])){
+if(!isset($_COOKIE['odwiedzeń'])){
     $ile = 1;
 }else{
-    $ile = (int)$_COOKIE['odw'];
+    $ile = (int)$_COOKIE['odwiedzeń'];
     if($ile < 1)
         $ile = 1;
     $ile++;
 }
-setcookie('odw', "$ile");
+setcookie('odwiedzeń', "$ile");
 ?>
 <!DOCTYPE html>
 <html lang="pl">
